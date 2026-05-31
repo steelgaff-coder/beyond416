@@ -1,35 +1,40 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="ja">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-  <title>Video</title>
-  <style>
-    html,
-    body {
-      margin: 0;
-      width: 100%;
-      height: 100%;
-      background: #000;
-      overflow: hidden;
-    }
-
-    body {
-      display: grid;
-      place-items: center;
-    }
-
-    video {
-      width: 100vw;
-      height: 100vh;
-      background: #000;
-      object-fit: contain;
-    }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>$villain TOKYO 2026</title>
+<style>
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    overflow: hidden;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+video {
+    width: 100vw;
+    height: 100vh;
+    object-fit: contain;
+    background: #000;
+}
+</style>
 </head>
 <body>
-  <video autoplay muted loop playsinline controls>
-    <source src="movie.mp4" type="video/mp4">
-  </video>
+
+<video
+autoplay
+muted
+loop
+playsinline>
+
+<source src="movie.mp4" type="video/mp4">
+</video>
 </body>
 </html>
