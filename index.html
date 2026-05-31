@@ -1,15 +1,63 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="ja">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Beyond416</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>$villain TOKYO 2026</title>
+
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      background: #000;
+      color: white;
+      width: 100%;
+      min-height: 100%;
+      font-family: sans-serif;
+      overflow-x: hidden;
+    }
+
+    .wrap {
+      width: 100%;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      background: #000;
+      padding-top: 20px;
+    }
+
+    video {
+      width: 100%;
+      max-width: 900px;
+      height: auto;
+      display: block;
+      background: #000;
+    }
+
+    .message {
+      text-align: center;
+      margin-top: 24px;
+      font-size: 16px;
+      opacity: 0.8;
+      line-height: 1.7;
+      padding: 0 20px 80px;
+    }
+  </style>
 </head>
 
-<body style="margin:0;background:black;">
+<body>
+  <div class="wrap">
+    <video autoplay muted loop playsinline controls>
+      <source src="villain2026.mp4" type="video/mp4">
+      お使いのブラウザでは動画を再生できません。
+    </video>
 
-<video autoplay muted playsinline width="100%">
-<source src="movie.mp4" type="video/mp4">
-</video>
+    <div class="message">
+      $villain TOKYO 2026<br>
+      オフ会写真は後日こちらで公開予定です。
+    </div>
+  </div>
 </body>
 </html>
