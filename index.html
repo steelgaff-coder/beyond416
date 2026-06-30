@@ -29,12 +29,23 @@ video {
 <body>
 
 <video
+autoplay
+muted
 controls
 loop
 playsinline
-preload="metadata">
+preload="auto">
 
 <source src="movie.mp4" type="video/mp4">
 </video>
+<script>
+const video = document.querySelector('video');
+const enableSound = () => {
+    video.muted = false;
+    video.play().catch(() => {});
+};
+document.addEventListener('click', enableSound, { once: true });
+document.addEventListener('touchstart', enableSound, { once: true });
+</script>
 </body>
 </html>
